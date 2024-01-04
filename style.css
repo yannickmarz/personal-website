@@ -38,11 +38,12 @@ input, button, textarea, select {
   /* Navigation Bar */
 
   ul {
+    width: 100%;
     list-style-type: none;
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 13px;
+    justify-content: space-evenly;
+    /* gap: 20px; */
+    margin-top: 14px;
   }
 
   ul a {
@@ -72,7 +73,9 @@ input, button, textarea, select {
   
   .about {
     margin-top: 50px;
-    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .about h1 {
@@ -91,15 +94,21 @@ input, button, textarea, select {
 
 .about .bio {
     margin-top: 20px;
-    color: var(--main-text-color)
+    color: var(--main-text-color);
+    text-wrap: wrap;
+    max-width: 488px;
+    text-align: center;
 }
 
 .links {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .about i {
+    font-size: 14pt;
     rotate: -45deg;
+    position: relative;
+    top: 3px;
 }
 
 .about a {
